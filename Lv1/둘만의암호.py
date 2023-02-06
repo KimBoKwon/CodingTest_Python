@@ -31,4 +31,4 @@ def solution(s, skip, index):
         answer += i
     return answer
 
-print(solution("aukks", "wbqd", 5))
+print(solution("ybcde", "az", 1))

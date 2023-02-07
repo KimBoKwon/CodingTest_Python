@@ -21,14 +21,8 @@
 #                 new_s[i] = big_english[e_index]
 #         elif new_s[i] == " ":
 #             new_s[i] == " "
-#     answer = listToString(new_s)
+#     answer = "".join(new_s)
 #     return answer
-
-# def listToString(str_list):
-#     result = ""
-#     for s in str_list:
-#         result += s
-#     return result.strip()
 
 def solution(s, n):
     answer = ''
@@ -39,10 +33,6 @@ def solution(s, n):
         elif s[i].lowupper():
             s[i] = chr((ord(s[i])-ord('a')+ n)%26+ord('a'))
     answer = "".join(s)
-    return answer
-
-
-        
     return answer
 
 print(solution("a B z",26))

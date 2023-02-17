@@ -16,6 +16,8 @@ def solution(id_list, report,k):
         user[a].add(b)
         # 신고당한 id의 신고 횟수 추가
         cnt[b] += 1
+
+    print(user)
     
     for i in id_list:
         result = 0

@@ -20,33 +20,25 @@ def solution(survey, choices):
 def result(total_grade):
     answer = ''
 
-    if total_grade['R'] > total_grade['T']:
+    if total_grade['R'] >= total_grade['T']:
         answer += 'R'
     elif total_grade['R'] < total_grade['T']:
         answer += 'T'
-    elif total_grade['R'] == total_grade['T']:
-        answer += 'R'
 
-    if total_grade['C'] > total_grade['F']:
+    if total_grade['C'] >= total_grade['F']:
         answer += 'C'
     elif total_grade['C'] < total_grade['F']:
         answer += 'F'
-    elif total_grade['C'] == total_grade['F']:
-        answer += 'C'
 
-    if total_grade['J'] > total_grade['M']:
+    if total_grade['J'] >= total_grade['M']:
         answer += 'J'
     elif total_grade['J'] < total_grade['M']:
         answer += 'M'
-    elif total_grade['J'] == total_grade['M']:
-        answer += 'J'
 
-    if total_grade['A'] > total_grade['N']:
+    if total_grade['A'] >= total_grade['N']:
         answer += 'A'
     elif total_grade['A'] < total_grade['N']:
         answer += 'N'
-    elif total_grade['A'] == total_grade['N']:
-        answer += 'A'
     return answer
 
 print(solution(["AN", "CF", "MJ", "RT", "NA"], [5, 3, 2, 7, 5]))
